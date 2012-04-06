@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D17FCAE152F51B000A2C393 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2D17FCAD152F51B000A2C393 /* Credits.rtf */; };
+		2DD881D7152E968100121E1E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD881D6152E968100121E1E /* Cocoa.framework */; };
+		2DD881E3152E968100121E1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD881E2152E968100121E1E /* main.m */; };
+		2DD881EA152E968100121E1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD881E9152E968100121E1E /* AppDelegate.m */; };
+		2DD881ED152E968100121E1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD881EB152E968100121E1E /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D17FCAD152F51B000A2C393 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Credits.rtf; path = ../../FlashbackChecker/FlashbackChecker/Credits.rtf; sourceTree = "<group>"; };
+		2DD881D2152E968100121E1E /* FlashbackChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashbackChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DD881D6152E968100121E1E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2DD881D9152E968100121E1E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2DD881DA152E968100121E1E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2DD881DB152E968100121E1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2DD881DE152E968100121E1E /* FlashbackChecker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlashbackChecker-Info.plist"; sourceTree = "<group>"; };
+		2DD881E2152E968100121E1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DD881E4152E968100121E1E /* FlashbackChecker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlashbackChecker-Prefix.pch"; sourceTree = "<group>"; };
+		2DD881E8152E968100121E1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DD881E9152E968100121E1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DD881EC152E968100121E1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DD881CF152E968100121E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD881D7152E968100121E1E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DD881C7152E968100121E1E = {
+			isa = PBXGroup;
+			children = (
+				2DD881DC152E968100121E1E /* FlashbackChecker */,
+				2DD881D5152E968100121E1E /* Frameworks */,
+				2DD881D3152E968100121E1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DD881D3152E968100121E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DD881D2152E968100121E1E /* FlashbackChecker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DD881D5152E968100121E1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DD881D6152E968100121E1E /* Cocoa.framework */,
+				2DD881D8152E968100121E1E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DD881D8152E968100121E1E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DD881D9152E968100121E1E /* AppKit.framework */,
+				2DD881DA152E968100121E1E /* CoreData.framework */,
+				2DD881DB152E968100121E1E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2DD881DC152E968100121E1E /* FlashbackChecker */ = {
+			isa = PBXGroup;
+			children = (
+				2DD881E8152E968100121E1E /* AppDelegate.h */,
+				2DD881E9152E968100121E1E /* AppDelegate.m */,
+				2DD881EB152E968100121E1E /* MainMenu.xib */,
+				2DD881DD152E968100121E1E /* Supporting Files */,
+			);
+			name = FlashbackChecker;
+			path = FlashBackChecker;
+			sourceTree = "<group>";
+		};
+		2DD881DD152E968100121E1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D17FCAD152F51B000A2C393 /* Credits.rtf */,
+				2DD881DE152E968100121E1E /* FlashbackChecker-Info.plist */,
+				2DD881E2152E968100121E1E /* main.m */,
+				2DD881E4152E968100121E1E /* FlashbackChecker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DD881D1152E968100121E1E /* FlashbackChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DD881F0152E968100121E1E /* Build configuration list for PBXNativeTarget "FlashbackChecker" */;
+			buildPhases = (
+				2DD881CE152E968100121E1E /* Sources */,
+				2DD881CF152E968100121E1E /* Frameworks */,
+				2DD881D0152E968100121E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashbackChecker;
+			productName = FlashBackChecker;
+			productReference = 2DD881D2152E968100121E1E /* FlashbackChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DD881C9152E968100121E1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2DD881CC152E968100121E1E /* Build configuration list for PBXProject "FlashbackChecker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2DD881C7152E968100121E1E;
+			productRefGroup = 2DD881D3152E968100121E1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DD881D1152E968100121E1E /* FlashbackChecker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DD881D0152E968100121E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD881ED152E968100121E1E /* MainMenu.xib in Resources */,
+				2D17FCAE152F51B000A2C393 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DD881CE152E968100121E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD881E3152E968100121E1E /* main.m in Sources */,
+				2DD881EA152E968100121E1E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DD881EB152E968100121E1E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DD881EC152E968100121E1E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DD881EE152E968100121E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2DD881EF152E968100121E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2DD881F1152E968100121E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlashBackChecker/FlashbackChecker-Prefix.pch";
+				INFOPLIST_FILE = "FlashBackChecker/FlashbackChecker-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = FlashbackChecker;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2DD881F2152E968100121E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlashBackChecker/FlashbackChecker-Prefix.pch";
+				INFOPLIST_FILE = "FlashBackChecker/FlashbackChecker-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = FlashbackChecker;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DD881CC152E968100121E1E /* Build configuration list for PBXProject "FlashbackChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DD881EE152E968100121E1E /* Debug */,
+				2DD881EF152E968100121E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DD881F0152E968100121E1E /* Build configuration list for PBXNativeTarget "FlashbackChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DD881F1152E968100121E1E /* Debug */,
+				2DD881F2152E968100121E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DD881C9152E968100121E1E /* Project object */;
+}
