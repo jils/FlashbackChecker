@@ -8,10 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-
-@property (assign) IBOutlet NSWindow* window;
-@property (assign) IBOutlet NSTextView* textView;
+@interface AppDelegate : NSObject //<NSApplicationDelegate>
+{
+    IBOutlet NSWindow* window;
+    IBOutlet NSTextView* textView;
+}
 
 - (IBAction)checkForInfection:(id)aSender;
 

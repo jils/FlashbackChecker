@@ -17,9 +17,6 @@
 
 @implementation AppDelegate
 
-@synthesize window = _window;
-@synthesize textView = _textView;
-
 - (void)dealloc
 {
     [super dealloc];
@@ -32,7 +29,7 @@
 
 - (IBAction)checkForInfection:(id)aSender
 {
-    [self.textView setString:@""];
+    [textView setString:@""];
         
     
     NSString* theSafari = @"/Applications/Safari.app/Contents/Info.plist";
@@ -52,7 +49,7 @@
         id theObject = [self valueForKey:theKey atPath:theFile];
         if( theObject )
         {
-            [self log:[NSString stringWithFormat:@"Potential Infection found at: %@", theFile]];
+            [self log:[NSString stringWithFormat:@"Potential Issue found at: %@", theFile]];
             [self log:[theObject description]];
             theInfected = YES;
         }
@@ -72,7 +69,7 @@
     
     if( !theInfected )
     {
-        [self log:@"\nNo Signs of infection were found."];
+        [self log:@"No Signs of infection were found."];
     }
     
     NSString* theVisit = @"\n\nVisit the F-Secure site for more information:\nhttp://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml";
@@ -102,8 +99,8 @@
 
 - (void)log:(NSString*)aString
 {
-    NSString* theString = [self.textView string];
-    [self.textView setString:[NSString stringWithFormat:@"%@%@\n", theString, aString]];
+    NSString* theString = [textView string];
+    [textView setString:[NSString stringWithFormat:@"%@%@\n", theString, aString]];
 }
 
 
