@@ -49,7 +49,8 @@
         id theObject = [self valueForKey:theKey atPath:theFile];
         if( theObject )
         {
-            [self log:[NSString stringWithFormat:@"Potential Issue found at: %@", theFile]];
+            NSString *format = NSLocalizedString(@"Potential Issue found at: %@", @"Message displayed in the results section in case an issue is found; the %@ string is a placeholder for the file path, that should be left in place");
+            [self log:[NSString stringWithFormat:format, theFile]];
             [self log:[theObject description]];
             theInfected = YES;
         }
@@ -58,21 +59,23 @@
             NSString* thePath = [theFile stringByExpandingTildeInPath];
             if( [[NSFileManager defaultManager] fileExistsAtPath:thePath] )
             {
-                [self log:[NSString stringWithFormat:@"Clear: %@", thePath]];
+                NSString *format = NSLocalizedString(@"Clear: %@", @"Message displayed in the results section in case no issue is found in the scanned file; the %@ string is a placeholder for the file path, that should be left in place");
+                [self log:[NSString stringWithFormat:format, thePath]];
             }
             else
             {
-                [self log:[NSString stringWithFormat:@"Clear (no file found): %@", thePath]];
+                NSString *format = NSLocalizedString(@"Clear (no file found): %@", @"Message displayed in the results section in case no issue is found because there is no corresponding file; the %@ string is a placeholder for the file path, that should be left in place");
+                [self log:[NSString stringWithFormat:format, thePath]];
             }
         }
     }
     
     if( !theInfected )
     {
-        [self log:@"No Signs of infection were found."];
+        [self log:NSLocalizedString(@"No Signs of infection were found.", @"Message displayed in the results section at the end of the scan if no issue was found")];
     }
     
-    NSString* theVisit = @"\n\nVisit the F-Secure site for more information:\nhttp://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml";
+    NSString* theVisit = NSLocalizedString(@"\n\nVisit the F-Secure site for more information:\nhttp://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml", @"Message displayed at the end of the scan to get visit a site with more information");
     [self log:theVisit];
 }
 

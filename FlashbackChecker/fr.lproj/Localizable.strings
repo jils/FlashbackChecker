@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings (French)
+  FlashbackChecker
+*/
+
+
+/* Message displayed at the end of the scan to get visit a site with more information */
+"\n\nVisit the F-Secure site for more information:\nhttp://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml" = "\n\nVisitez le site F-Secure site pour plus d'informations:\nhttp://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml";
+
+/* Message displayed in the results section in case no issue is found because there is no corresponding file; the %@ string is a placeholder for the file path, that should be left in place */
+"Clear (no file found): %@" = "OK (le fichier n'existe pas): %@";
+
+/* Message displayed in the results section in case no issue is found in the scanned file; the %@ string is a placeholder for the file path, that should be left in place */
+"Clear: %@" = "OK: %@";
+
+/* Message displayed in the results section at the end of the scan if no issue was found */
+"No Signs of infection were found." = "C'est bon: pas de signes d'infection.";
+
+/* Message displayed in the results section in case an issue is found; the %@ string is a placeholder for the file path, that should be left in place */
+"Potential Issue found at: %@" = "Problème potentiel trouvé sur le fichier suivant: %@";
+
