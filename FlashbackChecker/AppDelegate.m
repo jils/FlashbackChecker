@@ -72,8 +72,21 @@
         [self log:@"No Signs of infection were found."];
     }
     
-    NSString* theVisit = @"\n\nVisit the F-Secure site for more information:\nhttp://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml";
+    NSString* theVisit = @"\n\nVisit the F-Secure site for more information:";
     [self log:theVisit];
+
+    // There must be a simpler way to do this, right?
+    NSMutableAttributedString* attrString = [[NSMutableAttributedString alloc] initWithString:@"http://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml"];
+    NSRange range = NSMakeRange(0, [attrString length]);
+    [attrString beginEditing];
+    [attrString addAttribute:NSLinkAttributeName value:[[NSURL URLWithString:@"http://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml"] absoluteString] range:range];
+    [attrString addAttribute:NSForegroundColorAttributeName value:[NSColor blueColor] range:range];
+    [attrString addAttribute:
+     NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:NSSingleUnderlineStyle] range:range];
+    [attrString endEditing];
+    
+    [[textView textStorage] appendAttributedString:attrString];
+    [attrString autorelease];
 }
 
 
