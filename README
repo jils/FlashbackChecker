@@ -1,6 +1,8 @@
 Flashback checker runs the tests described in the F-Secure Bulletin:
 http://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml
 
+Download Flashback Checker 1.0: https://github.com/downloads/jils/FlashbackChecker/FlashbackChecker.1.0.zip
+
 Note** This utility checks and reports the presence of Flashback malware, 
 it does _not_ remove it!
 
@@ -9,4 +11,3 @@ No affiliation with F-Secure.
 Supports 10.5 and up, PPC and Intel clients.
 Juan I. Leon
 April 6th, 2012
-
