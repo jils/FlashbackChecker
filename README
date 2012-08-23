@@ -4,8 +4,8 @@
 *Update* April 12, 2012:
 
 Apple has released new security updates that check for and remove the common Flashback malware variants.
-I highly encourage Snow Leopard and Lion users to run Software Update and get the official Apple tool.
-http://support.apple.com/kb/HT5247
+I highly encourage 10.5 or later users to run Software Update and get the official Apple tool.
+http://support.apple.com/kb/HT5273
 
 
 ------------------------------------------------------------------------------------
@@ -16,9 +16,7 @@ Flashback checker runs the tests described in the F-Secure Bulletins:
 http://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml
 http://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_k.shtml
 
-Download Flashback Checker 1.0: https://github.com/downloads/jils/FlashbackChecker/FlashbackChecker.1.0.zip
-
-**Note** This utility checks and reports the presence of Flashback malware, 
+**Note** This utility checks and reports possible presence of Flashback malware, 
 it does _not_ remove it!
 
 No affiliation with F-Secure.
